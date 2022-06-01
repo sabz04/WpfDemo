@@ -1,0 +1,44 @@
+﻿<Window x:Class="WpfApp2.RegisterForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="RegisterForm" Height="450" Width="800">
+    <Grid>
+        <StackPanel
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <TextBlock
+                Style="{StaticResource tbStyle}">
+                Логин
+            </TextBlock>
+            <TextBox
+                Style="{StaticResource tbStyleBox}"
+                x:Name="logTB"
+                ></TextBox>
+            <TextBlock
+                Style="{StaticResource tbStyle}">
+                Пароль
+            </TextBlock>
+            <TextBox
+                 Style="{StaticResource tbStyleBox}"
+                x:Name="passTB"
+                ></TextBox>
+            <Button
+                Click="submitBTN_Click"
+                x:Name="submitBTN"
+                Margin="10"
+                FontSize="24px"
+                >Регистрация</Button>
+            <Button
+                x:Name="logBTN"
+                Width="100"
+                Click="logBTN_Click"
+                >
+                Уже с нами?
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

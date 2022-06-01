@@ -1,0 +1,19 @@
+﻿<Application x:Class="WpfApp2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfApp2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="tbStyle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="24px"></Setter>
+        </Style>
+        <Style x:Key="tbStyleBox" TargetType="TextBox">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Width" Value="200px"/>
+            <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+            <Setter Property="FontSize" Value="24px"></Setter>
+        </Style>
+    </Application.Resources>
+</Application>
